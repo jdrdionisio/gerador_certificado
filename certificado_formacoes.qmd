@@ -11,10 +11,13 @@ params:
   profissional: "João Dionísio"
   local: "Place of congress"
   file_name: "Teste"
+  office_path: "C:/Program Files/LibreOffice/program/soffice.exe"
 execute:
   echo: false
   warning: false
   error: false
+project:
+  execute-dir: project
 ---
 
 ```{r packages, echo=FALSE}
@@ -38,43 +41,27 @@ for (pkg in required_packages) {
 }
 remove(required_packages)
 remove(pkg)
-docxtractr::set_libreoffice_path("C:/Program Files/LibreOffice/program/soffice.exe")
+docxtractr::set_libreoffice_path(params$office_path)
 ```
 
 ```{r file start}
 # options(scipen = 999)
 data_atual <- Sys.Date()
 data_formatada <- format(data_atual, "%d de %B de %Y")
-
 data <- import("dataset/Presenças.xlsx",sheet = "Dados")
-
 print(params$profissional)
-
 data1 <- data |> 
     filter(Nome==params$profissional) |> 
     select(-Nome) |> 
     flatten_chr() |> 
     na.omit()
-#JD
 formacoes <- data1
-
 ppt <- read_pptx("template_certificado.pptx")
-
 slide <- add_slide(ppt, layout = "Certificado", master = "Documentos")
-
-# layout_properties(ppt)
-
+# layout_properties(ppt) 
 slide <- ph_with(slide, value = params$profissional, location = ph_location_label(ph_label = "nome_profissional"))
-
-slide <- ph_with(slide, value = params$ano, location = ph_location_label(ph_label = "ano"))
-
+# slide <- ph_with(slide, value = params$ano, location = ph_location_label(ph_label = "ano"))
 slide <- ph_with(slide, value = formacoes, location = ph_location_label(ph_label = "formacoes"))
-
 slide <- ph_with(slide, value = data_formatada, location = ph_location_label(ph_label = "data"))
-
 print(ppt, target = params$file_name)
-
-
-docxtractr::convert_to_pdf(params$file_name, pdf_file = sub("[.]pptx", ".pdf", params$file_name))
-file.remove(params$file_name)
 ```
