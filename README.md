@@ -1,5 +1,5 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="Gerador de Certificados em R"></a>
+<a name="top"></a>
 <!--
 *** Thanks for checking out this certificate bulk generator in R. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -22,7 +22,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">"Gerador de Certificados em R"</h3>
 
   <p align="center">
     project_description
@@ -42,19 +42,18 @@
   <summary>Indíce</summary>
   <ol>
     <li>
-      <a href="#sobre-o-projeto">Sobre o projeto</a>
+      <a href="#Sobre">Sobre o projeto</a>
       <ul>
         <li><a href="#Framework">Contruído com</a></li>
       </ul>
     </li>
     <li>
-      <a href="#como-comecar">Como Começar</a>
+      <a href="#Como Começar">Como Começar</a>
       <ul>
-        <li><a href="#pre-requisitos">Pré-requisitos</a></li>
-        <li><a href="#instalacao">Instalação</a></li>
+        <li><a href="#Pré-requisitos">Pré-requisitos</a></li>
       </ul>
     </li>
-    <li><a href="#contribuir">Contribuir</a></li>
+    <li><a href="#Contribuir">Contribuir</a></li>
     <li><a href="#licença">Licença</a></li>
     <li><a href="#contactar">Contactar</a></li>
   </ol>
@@ -77,11 +76,11 @@ do evento.
 * Mudança do tamanho, formato e iconografia incluida no certificado
 * Mudança dos parâmetros a incluir
 
-<p align="right">(<a href="#gerador-de-certificados-em-R">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Framework
 
-* [![R][R]][Next-url]
+* [![R][R]][R-url]
 * [![Officer][Officer]][officer-url]
 * [![LibreOffice][LibreOffice]][libre-url]
 
@@ -115,7 +114,7 @@ Para correr o projeto é necessário ter instalado o LibreOffice para a convers�
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#gerador-de-certificados-em-R">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## Licença
@@ -123,7 +122,7 @@ Para correr o projeto é necessário ter instalado o LibreOffice para a convers�
 Distributed under the MIT License. 
 Ver `LICENSE.txt` para mais informações.
 
-<p align="right">(<a href="#gerador-de-certificados-em-R">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- CONTACT -->
@@ -133,19 +132,19 @@ João Dionísio - [@jdrdionisio](https://twitter.com/jdrdionisio)
 
 Project Link: [https://github.com/jdrdionisio/gerador_certificado](https://github.com/jdrdionisio/gerador_certificado)
 
-<p align="right">(<a href="#gerador-de-certificados-em-R">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/jdrdionisio/gerador_certificado.svg?style=for-the-badge
 [contributors-url]: https://github.com/jdrdionisio/gerador_certificado/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/jdrdionisio/gerador_certificado.svg?style=for-the-badge
 [forks-url]: https://github.com/jdrdionisio/gerador_certificado/forks
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/jdrdionisio/gerador_certificado.svg?style=for-the-badge
 [stars-url]: https://github.com/jdrdionisio/gerador_certificado/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/jdrdionisio/gerador_certificado.svg?style=for-the-badge
 [issues-url]: https://github.com/jdrdionisio/gerador_certificado/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/jdrdionisio/gerador_certificado.svg?style=for-the-badge
 [license-url]: https://github.com/jdrdionisio/gerador_certificado/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/joao-david-dionisio-201875171/
